@@ -1,0 +1,16 @@
+.vacationImage {
+    height: auto;
+    width: 400px;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px; /* Space between the image and the input */
+}
+
+.no-image {
+    background-color: #f0f0f0; /* Placeholder color when no image is available */
+}
+
+.cancelButton {
+    background-color:  #00cccc;
+}

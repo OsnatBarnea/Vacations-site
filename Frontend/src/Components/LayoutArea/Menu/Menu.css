@@ -1,0 +1,27 @@
+.Menu {
+    background-color:  #248f8f;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: titles;
+    font-size: 30px;
+}
+
+.Menu a, .Menu span {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.Menu a:hover {
+    background-color: #00cccc;
+}
+
+.Menu a.active {
+    background-color: #00334d;
+    color: white;
+}

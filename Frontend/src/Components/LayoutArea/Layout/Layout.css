@@ -1,0 +1,18 @@
+
+
+.Layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.MainPage {
+    flex-grow: 1; /* This will make the main page content expand to fill available space */
+}
+
+footer {
+    justify-content: center;
+    width: 95%;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form select {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333; 
+    appearance: none; 
+}
+
+form option {
+    background-color: #fff; 
+    color: #333; 
+}
+
+form select:focus {
+    outline: none;
+    border-color: orange; 
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5); 
+}
+
+form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.cancelButton {
+    background-color:  #00cccc;
+}
+

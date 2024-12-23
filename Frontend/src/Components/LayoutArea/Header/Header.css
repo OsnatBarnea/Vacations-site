@@ -1,0 +1,14 @@
+header {
+    background-color: #00334d;
+    color: white;
+    padding: 0.5px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: titles;
+}
+
+@font-face {
+    font-family: titles;
+    src: url("../../../Assets/Fonts/Queen\ of\ Camelot.otf");
+}

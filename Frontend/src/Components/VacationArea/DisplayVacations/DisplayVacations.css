@@ -1,0 +1,173 @@
+.List {
+    display: flex;
+    justify-content: center;
+}
+
+.List ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Changed to exactly 3 columns */
+    gap: 20px;
+    padding: 20px;
+    list-style-type: none;
+    margin: 0;
+    max-width: 1200px; /* Adjusted max-width to accommodate 3 cards */
+    width: 100%; /* Ensure full width within the container */
+}
+
+.List li {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    max-height: 800px;
+    position: relative; 
+}
+
+.List .imageSpan {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.List .imageSpan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.List .destinationSpan {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.List .likeSpan {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0.5px solid #3498db;
+    border-radius: 10px;
+    width: auto;
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.List .likeSpan:hover {
+    cursor: pointer;
+}
+
+.List .likeSpan img {
+    width: 20px;  /* Adjust icon size */
+    height: 20px;
+    margin-right: 5px;
+}
+
+.List .descriptionSpan {
+    padding: 10px;
+    max-height: 100px; /* Limit description height */
+    overflow-y: auto; /* Add vertical scrollbar */
+    color: #666;
+    flex-grow: 1;
+}
+
+.List .datesSpan {
+    padding: 10px;
+    color: #888;
+}
+
+.List .priceSpan {
+    padding: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.List .editButton, .List .deleteButton {
+    margin: 10px;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.List .editButton:hover, .List .deleteButton:hover {
+    background-color: #2980b9;
+}
+
+/* Pagination-like effect to limit to 9 cards */
+.List ul li:nth-child(n+10) {
+    display: none;
+}
+
+/* Scrollbar styling for description */
+.List .descriptionSpan::-webkit-scrollbar {
+    width: 10px;
+}
+
+.List .descriptionSpan::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.List .descriptionSpan::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.List .descriptionSpan::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.clearButton {
+    background-color:  #00cccc;
+}
+
+@media (max-width: 1024px) {
+    .List ul {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .List ul {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        max-width: 100%;
+    }
+}
+
+.PageButton {
+    margin: 0 5px;
+    padding: 7px 12px;
+    border: 1px solid #ccc;
+    background-color:  #00334d;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.PageButton:hover {
+    background-color: #00cccc;
+}
+
+.PageButton.active {
+    background-color:#248f8f;
+    color: white;
+    border-color: #248f8f;
+}
+
+.reportButton {
+    margin-bottom: 10px;
+    margin-left: 1000px;
+}
